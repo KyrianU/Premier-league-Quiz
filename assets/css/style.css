@@ -4,7 +4,7 @@ body{
     font-family: Montserrat, sans-serif;
     font-weight: 200;
     color: black;
-    background-image: linear-gradient(to bottom left,#e90052,#ffffff,#04f5ff);
+    background-image: linear-gradient( lightblue,purple); 
 }
 
 *{
@@ -63,3 +63,34 @@ input[type = text]{
 #start:hover{
     background-color: #38003c;
 }
+
+h1 {
+    text-align: center;
+}
+
+#quiz-section {
+    background: white;
+    color: black;
+    text-align: center;
+    width: 50%;
+    margin: 0 auto 0 auto;
+    height: 300px;
+    padding-bottom: 30px;
+    border-radius: 10px;
+    padding: 2rem;
+}
+
+.multiple-choice-btn{
+    font-size: 100%;
+    margin: 1px auto 0 auto;
+    border: 1px solid #99ff33;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 60px;
+    width: 70%;
+}
+
+
+
+
+
