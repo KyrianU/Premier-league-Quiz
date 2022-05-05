@@ -1,55 +1,25 @@
+// Basic const functions.// 
+
 const question = document.querySelector('#question');
 const choices = Array.from(document.querySelectorAll('.choice-text'));
 const progressText = document.querySelector('#progressText');
 const scoreText = document.querySelector('#score');
 const progressBarFull = document.querySelector('#progressBarFull');
 
+// Call for the various functions created //
 let currentQuestion = {}
 let acceptingAnswers = true
 let score = 0
 let availableQuestions = []
 let availableCounter = 0
 
-const SCORE_POINTS = 10
-const MAX_QUESTIONS = 10
-
-function startGame () {
-    questionCounter = 0
-    score = 0
-    availableQuestions = [...questions]
-    getNewQuestion()
-}
-
-function getNewQuestion (){
-    if(availableQuestions.length === 0 || questionCounter > MAX_QUESTIONS) {
-        localStorage.setItem('mostRecentScore', score)
-
-        return window.location.assign('/end.html')
-    }
-
-    questionCounter++
-    progressText.innerText = `Question ${questionCounter} of ${MAX_QUESTIONS}`
-    progressBarFull.style.width = `${(questionCounter/MAX_QUESTIONS) * 100}`
-
-    const questionsIndex = Math.floor(Math.random() * availableQuestions.length)
-    currentQuestion = availableQuestions[questionsIndex]
-    question.innerText = currentQuestion.question 
-
-    choices.forEach(choice => {
-        const number = choice.dataset['number']
-        choice.innerText = currentQuestion['choice' + number]
-    })
-
-    availableQuestions.splice(questionsIndex, 1)
-
-    acceptingAnswers = true  
-}
-
-
+/**
+ * List of questions and answers data stored in this array object
+ */
 
 let questions = [
     {
-        question: "in the 2013/2014 season, Steven Gerrard’s famous slip occurred against which team?",
+        question: "in the 2013/2014 season, Steven Gerrards famous slip occurred against which team?",
         choice1: 'Chelsea',
         choice2: 'Manchester United',
         choice3: 'Manchester City',
@@ -65,7 +35,7 @@ let questions = [
         answer: 4,
     },
     {
-        question: "Who scored the fastest in hattrick in Premier League History",
+        question: "Who scored the fastest in hattrick in Premier League History?",
         choice1: 'Thierry Henry',
         choice2: 'Sadio Mane',
         choice3: 'Luis Suarez',
@@ -105,7 +75,7 @@ let questions = [
         answer: 4,
     },
     {
-        question: "Which defeated Arsenal to end their 49 games unbeaten run?",
+        question: "Which team defeated Arsenal to end their 49 games unbeaten run?",
         choice1: 'Manchester United',
         choice2: 'Liverpool',
         choice3: 'Chelsea',
@@ -128,30 +98,80 @@ let questions = [
         choice4: 'Everton',
         answer: 4,
     },
-    {
-        question: "Sam Allardyce managed which team between 1999-2007?",
-        choice1: 'Watford',
-        choice2: 'Southampton',
-        choice3: 'Norwich',
-        choice4: 'Bolton Wanderers',
-        answer: 4,
-    },
-    {
-        question: "Which country did former Blackburn Rovers player Morten Gamst Pedersen represent?",
-        choice1: 'Denmark',
-        choice2: 'Norway',
-        choice3: 'Sweden',
-        choice4: 'Finland',
-        answer: 2,
-    },
-    {
-        question: "Jurgen Klopp took over as Liverpool coach in which year?",
-        choice1: '2015',
-        choice2: '2014',
-        choice3: '2016',
-        choice4: '2017',
-        answer: 1,
-    },
+   
+   
 ];
+
+// Points for maximum score and maximum questions count //
+const SCORE_POINTS = 10
+const MAX_QUESTIONS = 10
+
+/**
+ * Start the game function. 
+ */
+
+const startGame = () => {
+    questionCounter = 0
+    score = 0
+    availableQuestions = [...questions]
+    getNewQuestion()
+}
+
+// Calls the new question once previous question is complete // 
+getNewQuestion = () => {
+    if(availableQuestions.length === 0 || questionCounter > MAX_QUESTIONS) {
+        localStorage.setItem('mostRecentScore', score)
+
+        return window.location.assign('end.html')
+    }
+
+    questionCounter++
+    progressText.innerText = `Question ${questionCounter} of ${MAX_QUESTIONS}`
+    progressBarFull.style.width = `${(questionCounter/MAX_QUESTIONS) * 100}%`
+
+    const questionsIndex = Math.floor(Math.random() * availableQuestions.length)
+    currentQuestion = availableQuestions[questionsIndex]
+    question.innerText = currentQuestion.question 
+
+    choices.forEach(choice => {
+        const number = choice.dataset['number']
+        choice.innerText = currentQuestion['choice' + number]
+    })
+
+    availableQuestions.splice(questionsIndex, 1)
+
+    acceptingAnswers = true  
+}
+// Function that determines wether result is correct or incorrect.//
+    choices.forEach(choice => {
+        choice.addEventListener('click', e => {
+            if(acceptingAnswers === false ) return
+
+            acceptingAnswers = false
+            const selectedChoice = e.target
+            const selectedAnswer = selectedChoice.dataset['number']
+
+            let classToApply = selectedAnswer == currentQuestion.answer ? 'correct' : 'incorrect'
+
+            if(classToApply === 'correct') {
+                incrementScore(SCORE_POINTS)
+            }
+
+            selectedChoice.parentElement.classList.add(classToApply)
+
+            setTimeout (() => {
+                selectedChoice.parentElement.classList.remove(classToApply)
+                getNewQuestion()
+            }, 700)
+        })
+    })
+
+    incrementScore = num => {
+        score +=num
+        scoreText.innerText = score
+    }
+
+    startGame()
+
 
 

@@ -1,7 +1,9 @@
 .choice-btn {
     display: flex;
     border-radius: 5px;
-    border: 1px solid red;
+    border: 3px solid #38003c;
+    font-size: 1.4rem;
+    font-weight: bold;
     margin: 20px 0;
     
 }
@@ -46,9 +48,10 @@
     overflow: hidden;
 }
 
-#progressbarfull {
+#progressBarFull {
     height: 100%;
     background: black;
+    width: 0%;
 }
 
 .head-display-prefix {

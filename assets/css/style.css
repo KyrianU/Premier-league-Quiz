@@ -4,7 +4,8 @@ body{
     
     font-weight: 200;
     color: black;
-    background-color: rgba(121, 121, 204, 0.419);
+    background: linear-gradient(#ffffff, #e90052, #04f5ff);
+    
    
 }
 
@@ -33,6 +34,7 @@ h1 {
     height: 550px;
     padding: 3rem;
     margin: 0 auto;
+    background-color: white;
     
 }
 
