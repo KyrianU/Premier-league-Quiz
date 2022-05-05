@@ -1,7 +1,7 @@
 .choice-btn {
     display: flex;
     border-radius: 5px;
-    border: 3px solid #38003c;
+    border: 3px solid;
     font-size: 1.4rem;
     font-weight: bold;
     margin: 20px 0;

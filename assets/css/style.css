@@ -4,7 +4,7 @@ body{
     
     font-weight: 200;
     color: black;
-    background: linear-gradient(#ffffff, #e90052, #04f5ff);
+    background: linear-gradient(to bottom right, #ff9933, #d14545);
     
    
 }
@@ -22,6 +22,11 @@ h1 {
     text-align: center;
 }
 
+h3 {
+    font-size: 150%;
+    font-weight: bold;
+}
+
 .container {
     
     display: flex;
@@ -29,7 +34,7 @@ h1 {
     align-items: center;
     text-align: center;
     border: 2px solid;
-    border-radius: 5px;
+    border-radius: 20px;
     max-width: 60%;
     height: 550px;
     padding: 3rem;
@@ -55,10 +60,10 @@ h1 {
     width: 10rem;
     margin-bottom: 2rem;
     text-align: center;
-    background: black;
+    background-color: black;
     border-radius: 5px;
     text-decoration: none;
-    color: white;
+    color: orange;
     
 }
 
@@ -68,6 +73,6 @@ h1 {
 }
 
 #leaderboard-btn{
-    background-color: red;
+    background-color: black;
 }
 
