@@ -7,7 +7,7 @@ const progressBarFull = document.querySelector('#progressBarFull');
 let currentQuestion = {}
 let acceptingAnswers = true
 let score = 0
-let availableQuestion = []
+let availableQuestions = []
 let availableCounter = 0
 
 const SCORE_POINTS = 10
@@ -31,9 +31,18 @@ function getNewQuestion (){
     progressText.innerText = `Question ${questionCounter} of ${MAX_QUESTIONS}`
     progressBarFull.style.width = `${(questionCounter/MAX_QUESTIONS) * 100}`
 
-    const questionIndex = Math.floor(Math.random() * availableQuestion.length)
-    currentQuestion = availableQuestions[questionIndex]
+    const questionsIndex = Math.floor(Math.random() * availableQuestions.length)
+    currentQuestion = availableQuestions[questionsIndex]
     question.innerText = currentQuestion.question 
+
+    choices.forEach(choice => {
+        const number = choice.dataset['number']
+        choice.innerText = currentQuestion['choice' + number]
+    })
+
+    availableQuestions.splice(questionsIndex, 1)
+
+    acceptingAnswers = true  
 }
 
 
