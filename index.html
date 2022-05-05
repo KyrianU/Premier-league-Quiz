@@ -11,36 +11,22 @@
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-    <div id="container-hero">
+    
         <header id="header-intro">
             <h1>Premier League Quiz</h1>
         </header>
-        <hr>
-        <div id="quiz-intro-content">
-            <p>How is your Premeier League knowlegde? shall we find out? Guess the answers to the 
-            following questions and try to score 100/100!
-            </p>
-            <p>Enter a username to get started!</p>
+        <br>
+    <div class="container">
+        <div id="landing-page" class="flex-column flex-center">
+            <h3>How is your Premier League football knowledge? Shall we find out? Guess the answers
+                to the following questions and try to score a perfect 100!
+            </h3>
+            <br>
+            <a href="/quiz.html" class="btn">Start</a>
+            <a href="/leaderboard.html" id="leaderboard-btn" class="btn">Leaderboard</a>
+        </div>
+    </div>
     
-        </div>
-
-    </div>
-
-
-    <div id="quiz-start">
-        <form action="quiz.html">
-            <div id="form-fill">
-                <label for="username">Enter username: </label>
-                <input type="text" name="username" id="username" placeholder="e.g: UserABC" required>
-            </div>
-
-            <div id="start-btn">
-            <button type="submit" id="start">Start Quiz!</button>
-        </form>
-
-        </div>
-
-    </div>
         <script src="quiz.js"></script>
 </body>
 </html>

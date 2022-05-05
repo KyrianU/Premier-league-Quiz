@@ -1,10 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
 
 body{
-    font-family: Montserrat, sans-serif;
+    
     font-weight: 200;
     color: black;
-    background: linear-gradient(blue,white);
+    background-color: rgba(121, 121, 204, 0.419);
    
 }
 
@@ -13,121 +13,59 @@ body{
    margin: 0;
    border: none;
    box-sizing: border-box;
+   font-family: Montserrat, sans-serif;
 }
 
-#container-hero {
-    width: 80%;
-    margin: 0 10% 0 10%;
-}
-
-#header-intro{
-    padding:3rem;
+h1 {
+    font-size: 3.4rem;
     text-align: center;
-}
-
-#quiz-intro-content{
-    color: grey;
-    background-color: white;
-    border-radius: 5px;
-    text-align: center;
-}
-
-#quiz-start{
-    padding: 3rem;
-    text-align: center;
-}
-
-input[type = text]{
-    display: inline-block;
-    border: 1px solid #38003c;
-    box-sizing: border-box;
-    border-radius: 2px;
-}
-
-#start-btn{
-    justify-content: center;
-    display: flex;
-    align-items: center;
-}
-
-#start{
-    font-size: 25px;
-    background-color: #04f5ff;
-    color: white;
-    margin-top: 15px;
-    cursor: pointer;
-    border-radius: 4px;
-    border: 1px solid;
-    
-}
-
-#start:hover{
-    background-color: #38003c;
-}
-
-.section-hero {
-  padding: 0;
-  margin: 0;
-  display:flex;
-  width: 100vw;
-  height: 100vh;
-  justify-content: center;
-  align-items: center;
 }
 
 .container {
-    width: 800px;
-    max-width: 80%;
-    background-color: white;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border: 2px solid;
     border-radius: 5px;
-    padding: 10px;
+    max-width: 60%;
+    height: 550px;
+    padding: 3rem;
+    margin: 0 auto;
     
-    
-
 }
 
-.btn-set {
-    display: grid;
-    grid-template-columns: repeat(2,auto);
-    margin: 15px 0;
-    padding: 20px;
-    gap: 10px;
-    
-    
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-center {
+    justify-content: center;
+    align-items: center;
 }
 
 .btn {
-    border: 1px solid blue;
-    background-color: lightblue;
-    border-radius: 5px;
-    padding: 5px 10px;
-    color: white;
+
     font-size: 1.5rem;
+    padding: 1rem 0;
+    width: 10rem;
+    margin-bottom: 2rem;
+    text-align: center;
+    background: black;
+    border-radius: 5px;
+    text-decoration: none;
+    color: white;
+    
 }
 
-.btn:hover{
-    cursor:pointer;
+.btn:hover {
+    cursor: pointer;
     transform: scale(1.05);
-    border-color: black;
 }
 
-.btn.correct {
-    background-color: green;
-}
-
-.btn.incorrect {
+#leaderboard-btn{
     background-color: red;
 }
 
-.restart-btn, .next-btn {
-    font-size: 1.5rem;
-    font-weight: bold;
-    padding: 10px 20px;
-}
-
-.control-btns {
-    justify-content: center;
-    display: flex;
-    align-items: center;
-    gap: 5px;
-}

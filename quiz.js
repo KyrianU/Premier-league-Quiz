@@ -1,23 +1,26 @@
-const nextButton = document.getElementById('next-btn');
-const restartButton = document.getElementById('restart-btn');
+const question = document.querySelector('#question');
+const choices = Array.from(document.querySelectorAll('.choice-text'));
+const progressText = document.querySelector('#progressText');
+const scoreText = document.querySelector('#score');
+const progressBarFull = document.querySelector('#progressBarFull');
 
+let currentQuestion = {}
+let acceptingAnswers = true
+let score = 0
+let availableQuestion = []
+let availableCounter = 0
 
+const SCORE_POINTS = 10
+const MAX_QUESTIONS = 10
 
-
-// function that enables user to start the Quiz //
-function startQuiz () {
- 
+function startGame () {
+    questionCounter = 0
+    score = 0
+    availableQuestions = [...questions]
+    getNewQuestion
 }
 
-//function that enables user to click to the next question //
 
-function getNextquestion () {
-
-}
-
-function selectAnswer () {
-
-}
 
 let questions = [
     {
