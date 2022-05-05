@@ -11,46 +11,23 @@
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-    <header id="header-hero">
-        <h1>Premier League Quiz</h1>
-    </header>
-    <br>
-    <section>
-    <div id="quiz-section">
-        <div class="header-section">
-            <h2>
-                <span class="question-count">
-                    Question
-                
-                <span id="question-count-increase">1</span> /10
-                </span>
-                <span class="score-count">
-                    Points
-                    <span id="score-count-increase">0</span>
-                </span>
-            </h2>
-        </div>
-    
-    <div class="container">
-        <div id="game">
-            <h2>In the 2013/2014 season, Steven Gerrard's famous slip occured against What team?</h2>
-        </div>
-        <button class="multiple-choice-btn" id="answer1" data-value='1'>
-            Chelsea
-        </button>
-        <button class="multiple-choice-btn" id="answer2" data-value='1'>
-            Manchester City
-        </button>
-        <button class="multiple-choice-btn" id="answer3" data-value='1'>
-            Manchester United
-        </button>
-        <button class="multiple-choice-btn" id="answer4" data-value='1'>
-            Arsenal
-        </button>
+    <div class="section-hero">
+   <div class="container">
+       <div id="question-container">
+           <div id="question">Question</div>
+           <div id="answers-btns" class="btn-set">
+               <button class="btn">Option1</button>
+               <button class="btn">Option2</button>
+               <button class="btn">Option3</button>
+               <button class="btn">Option4</button>
+           </div>
+       </div>
+       <div class="control-btns">
+           <button id="restart-btn" class="restart-btn btn">Restart</button>
+           <button id="next-btn" class="next-btn btn">Next</button>
+       </div>
+   </div>
     </div>
-    </div>
-
-    </section>
-    
+    <script src="quiz.js"></script>
 </body>
 </html>
