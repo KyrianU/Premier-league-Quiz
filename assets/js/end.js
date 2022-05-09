@@ -1,7 +1,7 @@
 // Basic const function //
 const username = document.querySelector('#username')
 const saveBtn = document.querySelector('#saveBtn')
-const finalScore = document.querySelector('#finalScore')
+const finalScore = document.querySelector('#final-Score')
 const mostRecentScore = localStorage.getItem('mostRecentScore')
 
 const highScores = JSON.parse(localStorage.getItem('highScores')) || []
@@ -10,7 +10,7 @@ const highScores = JSON.parse(localStorage.getItem('highScores')) || []
 const MAX_HIGH_SCORES = 3;
 
 // Saves the scores on a local storage do be displayed on the leadeboards page //
-finalScore.innerText = mostRecentScore;
+finalScore.innerText = mostRecentScore
 
 // Event listener that will enable the save button to operate //
 
@@ -22,7 +22,7 @@ saveHighScore = e => {
     e.preventDefault();
 
     const score = {
-        score: Math.floor(Math.random() * 100),
+        score: mostRecentScore,
         name : username.value
     }
 
