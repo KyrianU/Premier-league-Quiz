@@ -35,13 +35,14 @@ h3 {
     text-align: center;
     border: 2px solid;
     border-radius: 20px;
-    max-width: 60%;
-    height: 550px;
+    max-width: 85%;
+    height: 450px;
     padding: 3rem;
     margin: 0 auto;
     background-color: white;
     
 }
+
 
 .flex-center {
     display: flex;
@@ -60,19 +61,25 @@ h3 {
     width: 10rem;
     margin-bottom: 2rem;
     text-align: center;
-    background-color: black;
     border-radius: 5px;
     text-decoration: none;
-    color: orange;
-    
+      
 }
+
+.btn-start {
+    background-color: #e90052;
+    color:black;
+}
+
+.btn-scoreboard {
+    background-color: #00ff85;
+}
+
 
 .btn:hover {
     cursor: pointer;
     transform: scale(1.05);
 }
 
-#scoreboard-btn{
-    background-color: black;
-}
+
 
