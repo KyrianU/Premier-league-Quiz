@@ -117,7 +117,9 @@ const startGame = () => {
     getNewQuestion()
 }
 
-// Calls the new question once previous question is complete // 
+/**
+ * Calls the new question once previous question is complete
+ */
 getNewQuestion = () => {
     if(availableQuestions.length === 0 || questionCounter > MAX_QUESTIONS) {
         localStorage.setItem('mostRecentScore', score)

@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
+body {
+    color:black;
+    background: red;
+
+}
+
+.flex-center {
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-column {
+    justify-content: center;
+    align-items: center;
+}
+
+.btn{
+    font-size: 1.5rem;
+    padding: 1rem 0;
+    width: 10rem;
+    margin-bottom: 2rem;
+    text-align: center;
+    background-color: black;
+    border-radius: 5px;
+    text-decoration: none;
+    color: orange;
+}
+
+.btn:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+}
