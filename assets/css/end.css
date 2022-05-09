@@ -22,10 +22,16 @@ body {
     width: 10rem;
     margin-bottom: 2rem;
     text-align: center;
-    background-color: black;
+    background-color: #00ff85;
     border-radius: 5px;
+    border: 2px solid;
     text-decoration: none;
     color: #38003c;
+}
+
+.btn-startover {
+    background-color: #e90052;
+    color: #38003c
 }
 
 .btn[disabled]:hover {
