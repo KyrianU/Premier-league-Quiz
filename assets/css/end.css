@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
 
 body {
-    color:black;
-    background: red;
+    color: #38003c;
+    background: #04f5ff;;
 
 }
 
@@ -25,7 +25,7 @@ body {
     background-color: black;
     border-radius: 5px;
     text-decoration: none;
-    color: orange;
+    color: #38003c;
 }
 
 .btn[disabled]:hover {

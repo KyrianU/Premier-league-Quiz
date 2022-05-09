@@ -41,7 +41,7 @@
 #progressBar {
     width: 10rem;
     height: 2rem;
-    border: 0.2rem solid black;
+    border: 0.2rem solid #38003c;
     margin: 1rem;
     padding: 1rem;
     border-radius: 50px;
@@ -50,7 +50,7 @@
 
 #progressBarFull {
     height: 100%;
-    background: red;
+    background: #38003c;
     width: 0%;
 }
 

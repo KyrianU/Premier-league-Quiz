@@ -1,16 +1,21 @@
 body {
-    color:black;
-    background-color: brown;
+    background-color: #04f5ff;
 }
 
-#highScoresList {
-    list-style: none;
-    margin-bottom: 4rem;
-}
-
-.high-score {
-    font-size: 2.8rem;
-    margin-bottom: 0.5rem;
+.container {
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border: 2px solid;
+    border-radius: 20px;
+    max-width: 60%;
+    height: 300px;
+    padding: 3rem;
+    margin: 0 auto; 
+    background-color: white;
+    
 }
 
 .flex-center {
