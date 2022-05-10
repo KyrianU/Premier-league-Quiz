@@ -1,5 +1,7 @@
+/* Google Fonts link. */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
 
+/* Structure and color theme for the quiz site. */
 body{
     
     font-weight: 200;
@@ -25,7 +27,7 @@ h3 {
     font-size: 150%;
     font-weight: bold;
 }
-
+/* structure for the box containing quiz questions and answer options */
 .container {
     
     display: flex;
@@ -52,7 +54,7 @@ h3 {
     justify-content: center;
     align-items: center;
 }
-
+/* basic structure and styling of the buttons */
 .btn {
 
     font-size: 1.5rem;
@@ -80,6 +82,7 @@ h3 {
     transform: scale(1.05);
 }
 
+/* Media query for screens of 900px and below */
 @media screen and (max-width: 900px) {
     .container {
     

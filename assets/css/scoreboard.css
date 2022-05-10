@@ -11,7 +11,7 @@ body {
 #finalScore {
     text-decoration: underline;
 }
-
+/* Ranking of the top 3 score from the quiz */
 .container {
     
     display: flex;
@@ -24,6 +24,7 @@ body {
     height: 300px;
     padding: 3rem;
     margin: 0 auto;
+    margin-top: 5rem;
     background-color: white;
     color: #38003c;;
     
@@ -59,4 +60,22 @@ body {
 
 #highScoresList {
     list-style: none;
+}
+
+@media scren and (max-width: 400px){
+    .container {
+    
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        border: 2px solid;
+        border-radius: 20px;
+        height: 300px;
+        padding: 3rem;
+        margin: 0 auto;
+        background-color: white;
+        color: #38003c;;
+        
+    }
 }

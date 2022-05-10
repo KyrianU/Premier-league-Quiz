@@ -7,7 +7,7 @@
     margin: 20px 0;
     
 }
-
+/* hover effect to improve user visual experience */
 .choice-btn:hover{
     cursor: pointer;
     transform: scale(1.05);
@@ -24,7 +24,7 @@
     width: 60%;
     font-weight: bold;
 }
-
+/* Colors given to button when it returns green for correct answer or red for incorrect answer */ 
 .correct {
     background-color: green;
 }
@@ -37,7 +37,7 @@
     display:flex;
     justify-content: space-around;
 }
-
+/* Progress bar to help keep the user up to date with their progress */
 #progressBar {
     width: 10rem;
     height: 2rem;
@@ -47,7 +47,7 @@
     border-radius: 50px;
     overflow: hidden;
 }
-
+/* increments by 10% after each question is answered */
 #progressBarFull {
     height: 100%;
     background: #38003c;
@@ -65,6 +65,7 @@
     
 }
 
+/* Media query for screens of 400px and below */
 @media screen and (max-width: 400px) {
     .head-display-prefix {
         text-align: center;

@@ -1,3 +1,4 @@
+/* Google fonts link */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
 
 body {
@@ -23,6 +24,7 @@ body {
     height: 450px;
     padding: 3rem;
     margin: 0 auto;
+    margin-top: 3rem;
     background-color: white;
     
 }
@@ -53,12 +55,12 @@ body {
     text-decoration: none;
     color: #38003c;
 }
-
+/* button to take you back to the start of the quizz */
 .btn-startover {
     background-color: #e90052;
     color: #38003c
 }
-
+/* save button disabled until user inputs username */
 .btn[disabled]:hover {
     cursor: not-allowed;
     transform: none;
@@ -76,7 +78,7 @@ body {
     align-items: center;
     
 }
-
+/* user input field */
 input {
     margin-bottom: 2rem;
     width: 15rem;
@@ -85,12 +87,12 @@ input {
     border: 2px solid #38003c;
     border-radius: 5px
 }
-
+/* end message after user completes quiz */
 #end-text {
     font-size: 2.5rem;
     text-align: center;
 }
-
+/* Media query for screen of 840px and below */
 @media screen and (max-width: 840px) {
     #end-text {
         font-size: 1.5rem;

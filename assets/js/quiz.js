@@ -7,11 +7,11 @@ const scoreText = document.querySelector('#score');
 const progressBarFull = document.querySelector('#progressBarFull');
 
 // Call for the various functions created //
-let currentQuestion = {}
-let acceptingAnswers = true
-let score = 0
-let availableQuestions = []
-let availableCounter = 0
+let currentQuestion = {};
+let acceptingAnswers = true;
+let score = 0;
+let availableQuestions = [];
+let availableCounter = 0;
 
 /**
  * List of questions and answers data stored in this array object
@@ -103,77 +103,81 @@ let questions = [
 ];
 
 // Points for maximum score and maximum questions count //
-const SCORE_POINTS = 10
-const MAX_QUESTIONS = 10
+const SCORE_POINTS = 10;
+const MAX_QUESTIONS = 10;
 
 /**
  * Start the game function. 
  */
 
 const startGame = () => {
-    questionCounter = 0
-    score = 0
-    availableQuestions = [...questions]
-    getNewQuestion()
-}
+    questionCounter = 0;
+    score = 0;
+    availableQuestions = [...questions];
+    getNewQuestion();
+};
 
 /**
  * Calls the new question once previous question is complete
  */
 getNewQuestion = () => {
     if(availableQuestions.length === 0 || questionCounter > MAX_QUESTIONS) {
-        localStorage.setItem('mostRecentScore', score)
+        localStorage.setItem('mostRecentScore', score);
 
-        return window.location.assign('end.html')
+        return window.location.assign('end.html');
     }
 
-    questionCounter++
+    questionCounter++;
     progressText.innerText = `Question ${questionCounter} of ${MAX_QUESTIONS}`;
     progressBarFull.style.width = `${(questionCounter / MAX_QUESTIONS) * 100}%`;
 
-    const questionsIndex = Math.floor(Math.random() * availableQuestions.length)
-    currentQuestion = availableQuestions[questionsIndex]
-    question.innerText = currentQuestion.question 
+    const questionsIndex = Math.floor(Math.random() * availableQuestions.length);
+    currentQuestion = availableQuestions[questionsIndex];
+    question.innerText = currentQuestion.question ;
 
     choices.forEach(choice => {
-        const number = choice.dataset['number']
-        choice.innerText = currentQuestion['choice' + number]
-    })
+        const number = choice.dataset['number'];
+        choice.innerText = currentQuestion['choice' + number];
+    });
 
-    availableQuestions.splice(questionsIndex, 1)
+    availableQuestions.splice(questionsIndex, 1);
 
-    acceptingAnswers = true  
+    acceptingAnswers = true;
 }
-// Function that determines wether result is correct or incorrect.//
+/**
+ * Function that determines whether result is correct or incorrect.
+ */
     choices.forEach(choice => {
         choice.addEventListener('click', e => {
-            if(acceptingAnswers === false ) return
+            if(acceptingAnswers === false ) return;
 
-            acceptingAnswers = false
+            acceptingAnswers = false;
             const selectedChoice = e.target
-            const selectedAnswer = selectedChoice.dataset['number']
+            const selectedAnswer = selectedChoice.dataset['number'];
 
-            let classToApply = selectedAnswer == currentQuestion.answer ? 'correct' : 'incorrect'
+            let classToApply = selectedAnswer == currentQuestion.answer ? 'correct' : 'incorrect';
 
             if(classToApply === 'correct') {
-                incrementScore(SCORE_POINTS)
+                incrementScore(SCORE_POINTS);
             }
 
-            selectedChoice.parentElement.classList.add(classToApply)
+            selectedChoice.parentElement.classList.add(classToApply);
 
             setTimeout (() => {
-                selectedChoice.parentElement.classList.remove(classToApply)
-                getNewQuestion()
-            }, 700)
-        })
-    })
-
+                selectedChoice.parentElement.classList.remove(classToApply);
+                getNewQuestion();
+            }, 700);
+        });
+    });
+/**
+ * increments the score to the live tracker.
+ */
     incrementScore = num => {
-        score +=num
-        scoreText.innerText = score
-    }
+        score += num;
+        scoreText.innerText = score;
+    };
 
-    startGame()
+    startGame();
 
 
 
