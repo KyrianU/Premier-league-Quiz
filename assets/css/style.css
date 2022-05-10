@@ -80,5 +80,73 @@ h3 {
     transform: scale(1.05);
 }
 
+@media screen and (max-width: 900px) {
+    .container {
+    
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        border: 2px solid;
+        border-radius: 20px;
+        height: 500px;
+        padding: 3rem;
+        margin: 0 auto;
+        background-color: white;
+        
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .container {
+    
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        border: 2px solid;
+        border-radius: 20px;
+        height: 600px;
+        padding: 3rem;
+        margin: 0 auto;
+        background-color: white;
+        
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .container {
+    
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        border: 2px solid;
+        border-radius: 20px;
+        height: 700px;
+        padding: 3rem;
+        margin: 0 auto;
+        background-color: white;
+        
+    }
+}
+
+@media screen and (max-width: 300px) {
+    .container {
+    
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        border: 2px solid;
+        border-radius: 20px;
+        height: 780px;
+        padding: 3rem;
+        margin: 0 auto;
+        background-color: white;
+}
+}
+
+
 
 

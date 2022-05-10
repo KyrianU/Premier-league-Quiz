@@ -56,11 +56,29 @@
 
 .head-display-prefix {
     text-align: center;
-    font-size: 3rem;
+    font-size: 2rem;
 }
 
 
 .head-main-text {
     text-align: center;
     
+}
+
+@media screen and (max-width: 400px) {
+    .head-display-prefix {
+        text-align: center;
+        font-size: 1rem;
+    }
+
+    .choice-btn {
+        display: flex;
+        border-radius: 5px;
+        border: 3px solid;
+        font-size: 1.5rem;
+  
+
+    }
+
+   
 }
