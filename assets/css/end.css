@@ -4,7 +4,7 @@
 body {
     
     color: #38003c;
-    background: #04f5ff;;
+    background: rgba(0,245,255, 0.6);
 
 }
 
@@ -25,7 +25,7 @@ body {
     padding: 3rem;
     margin: 0 auto;
     margin-top: 3rem;
-    background-color: white;
+    background: white;
     
 }
 

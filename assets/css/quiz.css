@@ -5,6 +5,7 @@
     font-size: 1.4rem;
     font-weight: bold;
     margin: 20px 0;
+    background: white;
     
 }
 /* hover effect to improve user visual experience */
@@ -43,7 +44,6 @@
     height: 2rem;
     border: 0.2rem solid #38003c;
     margin: 1rem;
-    padding: 1rem;
     border-radius: 50px;
     overflow: hidden;
 }

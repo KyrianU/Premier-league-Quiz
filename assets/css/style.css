@@ -4,9 +4,9 @@
 /* Structure and color theme for the quiz site. */
 body{
     
-    font-weight: 200;
+    font-weight: 300;
     color: #38003c;
-    background-color: #04f5ff;
+    background-color: rgba(0,245,255, 0.6)
      
 }
 
@@ -41,6 +41,7 @@ h3 {
     padding: 3rem;
     margin: 0 auto;
     background-color: white;
+    
     
 }
 

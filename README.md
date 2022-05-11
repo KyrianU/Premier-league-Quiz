@@ -12,7 +12,6 @@ Premier League Football quiz is designed to test the knowledge of Premier league
 
 ## Color Reference
 
-<img width="395" alt="Colour Palette" src="https://user-images.githubusercontent.com/98747053/167835423-cee20e23-151e-4eb2-a0f3-9aa8b3708084.png"> 
 
 | RGB              | Hex                                                                |
 | ----------------- | ------------------------------------------------------------------ |
@@ -27,4 +26,7 @@ Premier League Football quiz is designed to test the knowledge of Premier league
 ### Font used 
 
 * The font family I used for this project is ["Montserrat", sans-serif;](https://fonts.google.com/specimen/Montserrat?query=Montserrat)
+
+# Features 
+
 
