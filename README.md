@@ -9,3 +9,13 @@ This is website based quiz game built with CSS3, HTML5 and JavaScript. It enable
 Premier League Football quiz is designed to test the knowledge of Premier league football fans.
 
 # UX (User Experience)
+
+## Color Reference
+
+<img width="395" alt="Colour Palette" src="https://user-images.githubusercontent.com/98747053/167835423-cee20e23-151e-4eb2-a0f3-9aa8b3708084.png"> 
+
+* For this project, I really wanted to embody the spirit of the Premier league by incorporating the color theme of the premier league. I used the light blue color for the body, the white for the box container, the light red and green colors for the buttons and the purple for the writing.
+
+### Font used 
+
+* The font family I used for this project is ["Montserrat", sans-serif;](https://fonts.google.com/specimen/Montserrat?query=Montserrat)
