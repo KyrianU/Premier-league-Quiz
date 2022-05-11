@@ -17,8 +17,7 @@ let availableCounter = 0;
  * List of questions and answers data stored in this array object
  */
 
-let questions = [
-    {
+let questions = [{
         question: "in the 2013/2014 season, Steven Gerrards famous slip occurred against which team?",
         choice1: 'Chelsea',
         choice2: 'Manchester United',
@@ -98,8 +97,8 @@ let questions = [
         choice4: 'Everton',
         answer: 4,
     },
-   
-   
+
+
 ];
 
 // Points for maximum score and maximum questions count //
@@ -121,7 +120,7 @@ const startGame = () => {
  * Calls the new question once previous question is complete
  */
 getNewQuestion = () => {
-    if(availableQuestions.length === 0 || questionCounter > MAX_QUESTIONS) {
+    if (availableQuestions.length === 0 || questionCounter > MAX_QUESTIONS) {
         localStorage.setItem('mostRecentScore', score);
 
         return window.location.assign('end.html');
@@ -133,7 +132,7 @@ getNewQuestion = () => {
 
     const questionsIndex = Math.floor(Math.random() * availableQuestions.length);
     currentQuestion = availableQuestions[questionsIndex];
-    question.innerText = currentQuestion.question ;
+    question.innerText = currentQuestion.question;
 
     choices.forEach(choice => {
         const number = choice.dataset['number'];
@@ -147,37 +146,34 @@ getNewQuestion = () => {
 /**
  * Function that determines whether result is correct or incorrect.
  */
-    choices.forEach(choice => {
-        choice.addEventListener('click', e => {
-            if(acceptingAnswers === false ) return;
+choices.forEach(choice => {
+    choice.addEventListener('click', e => {
+        if (acceptingAnswers === false) return;
 
-            acceptingAnswers = false;
-            const selectedChoice = e.target
-            const selectedAnswer = selectedChoice.dataset['number'];
+        acceptingAnswers = false;
+        const selectedChoice = e.target
+        const selectedAnswer = selectedChoice.dataset['number'];
 
-            let classToApply = selectedAnswer == currentQuestion.answer ? 'correct' : 'incorrect';
+        let classToApply = selectedAnswer == currentQuestion.answer ? 'correct' : 'incorrect';
 
-            if(classToApply === 'correct') {
-                incrementScore(SCORE_POINTS);
-            }
+        if (classToApply === 'correct') {
+            incrementScore(SCORE_POINTS);
+        }
 
-            selectedChoice.parentElement.classList.add(classToApply);
+        selectedChoice.parentElement.classList.add(classToApply);
 
-            setTimeout (() => {
-                selectedChoice.parentElement.classList.remove(classToApply);
-                getNewQuestion();
-            }, 700);
-        });
+        setTimeout(() => {
+            selectedChoice.parentElement.classList.remove(classToApply);
+            getNewQuestion();
+        }, 700);
     });
+});
 /**
  * increments the score to the live tracker.
  */
-    incrementScore = num => {
-        score += num;
-        scoreText.innerText = score;
-    };
+incrementScore = num => {
+    score += num;
+    scoreText.innerText = score;
+};
 
-    startGame();
-
-
-
+startGame();
