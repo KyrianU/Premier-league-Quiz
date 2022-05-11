@@ -33,13 +33,13 @@ Premier League Football quiz is designed to test the knowledge of Premier league
 
 ## Landing Page 
  
- <img width="1151" alt="Screenshot 2022-05-11 at 18 42 56" src="https://user-images.githubusercontent.com/98747053/167913445-03f11998-7179-46ce-a25e-c3ded3b15ad2.png">
+ <img width="1151" alt="Screenshot 2022-05-11 at 22 31 15" src="https://user-images.githubusercontent.com/98747053/167952008-4642d87b-0140-4417-a0c9-2fb5c52f2a53.png">
 
  * Landing Page which consists of a welcoming message, with a start button that will take you to the main quiz page and scoreboard button which will take you to the rankings for the best scores.
 
  ## Main Quiz Page 
  
- <img width="1151" alt="Screenshot 2022-05-11 at 19 59 29" src="https://user-images.githubusercontent.com/98747053/167931007-5758385b-f557-4749-86a2-b0dbfa7edc01.png">
+<img width="1151" alt="Screenshot 2022-05-11 at 22 34" src="https://user-images.githubusercontent.com/98747053/167951843-ddc4504f-dfc8-4ebd-ad9e-f5c51f45a5ab.png">
 
- 
+
 

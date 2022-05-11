@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,53 +12,55 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/quiz.css">
 </head>
-<body> 
-   <!--Header display -->
+
+<body>
+    <!--Header display -->
     <div class="flex-header">
-    <div class="item-display">
-        <p id="progressText" class="head-display-prefix">
-            Question
-        </p>
-        <div id="progressBar">
-            <div id="progressBarFull"></div>
+        <div class="item-display">
+            <p id="progressText" class="head-display-prefix">
+                Question
+            </p>
+            <div id="progressBar">
+                <div id="progressBarFull"></div>
+            </div>
+        </div>
+        <div class="item-display">
+            <p class="head-display-prefix">
+                Score
+            </p>
+            <h1 class="head-main-text" id="score">
+                0
+            </h1>
         </div>
     </div>
-    <div class="item-display">
-        <p class="head-display-prefix">
-            Score
-        </p>
-        <h1 class="head-main-text" id="score">
-            0
-        </h1>
-    </div>
-    </div>
-    
+
     <div class="container">
         <div id="quiz" class="justify-center flex-column">
             <div id="head-display">
-                              
-<!--Main question -->           
+
+                <!--Main question -->
                 <h2 id="question">what is the answer to the question</h2>
                 <div class="choice-btn">
                     <p class="choice-prefix">A<p>
-                    <p class="choice-text" data-number="1">Choice1</p>
+                            <p class="choice-text" data-number="1">Choice1</p>
                 </div>
                 <div class="choice-btn">
                     <p class="choice-prefix">B<p>
-                    <p class="choice-text" data-number="2">Choice2</p>
+                            <p class="choice-text" data-number="2">Choice2</p>
                 </div>
                 <div class="choice-btn">
                     <p class="choice-prefix">C<p>
-                    <p class="choice-text" data-number="3">Choice3</p>
+                            <p class="choice-text" data-number="3">Choice3</p>
                 </div>
                 <div class="choice-btn">
                     <p class="choice-prefix">D<p>
-                    <p class="choice-text" data-number="4">Choice4</p>
+                            <p class="choice-text" data-number="4">Choice4</p>
                 </div>
             </div>
         </div>
     </div>
-<!--Javascript external link-->       
-<script src="assets/js/quiz.js"></script>
+    <!--Javascript external link-->
+    <script src="assets/js/quiz.js"></script>
 </body>
+
 </html>
