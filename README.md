@@ -33,13 +33,20 @@ Premier League Football quiz is designed to test the knowledge of Premier league
 
 ## Landing Page 
  
- <img width="1151" alt="Screenshot 2022-05-11 at 22 31 15" src="https://user-images.githubusercontent.com/98747053/167952008-4642d87b-0140-4417-a0c9-2fb5c52f2a53.png">
+ <img width="1151" alt="Home Page" src="https://user-images.githubusercontent.com/98747053/167952008-4642d87b-0140-4417-a0c9-2fb5c52f2a53.png">
 
  * Landing Page which consists of a welcoming message, with a start button that will take you to the main quiz page and scoreboard button which will take you to the rankings for the best scores.
 
  ## Main Quiz Page 
- 
-<img width="1151" alt="Screenshot 2022-05-11 at 22 34" src="https://user-images.githubusercontent.com/98747053/167951843-ddc4504f-dfc8-4ebd-ad9e-f5c51f45a5ab.png">
 
+ * The Page below contains a header display with a question counter and progress bar on the top left hand side followed by Score tracker on the top right hand side of the page. Hover effet added to the answer boxes any time cursor hovers over them.
+ 
+<img width="1151" alt="Quiz Page" src="https://user-images.githubusercontent.com/98747053/167951843-ddc4504f-dfc8-4ebd-ad9e-f5c51f45a5ab.png">
+
+## End Of Quiz Page 
+
+* Final score is displayed at the top of the page folowed by a congratulation message. User will have the opportunity to enter their username and save it. The save button has been disabled untill the user has entered a username.
+
+<img width="1231" alt="Final Quiz message" src="https://user-images.githubusercontent.com/98747053/167960761-545d9e21-cb8a-4a43-8a0f-8e5ba873f25b.png">
 
 
