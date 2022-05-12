@@ -6,8 +6,8 @@ const mostRecentScore = localStorage.getItem('mostRecentScore');
 
 const highScores = JSON.parse(localStorage.getItem('highScores')) || [];
 
-// This section will show the top 3 high scores on the leaderboard //
-const MAX_HIGH_SCORES = 3;
+// This section will show the top 6 high scores on the leaderboard //
+const MAX_HIGH_SCORES = 6;
 
 // Saves the scores on a local storage do be displayed on the leadeboards page //
 finalScore.innerText = mostRecentScore;
@@ -34,4 +34,5 @@ saveHighScore = e => {
 
     localStorage.setItem('highScores', JSON.stringify(highScores));
     window.location.assign('index.html');
+    
 };
