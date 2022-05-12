@@ -2,9 +2,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
 
 body {
-    
+
     color: #38003c;
-    background: rgba(4,245,255, 0.5);
+    background: rgba(4, 245, 255, 0.5);
 
 }
 
@@ -13,7 +13,7 @@ body {
 }
 
 .container {
-    
+
     display: flex;
     justify-content: center;
     align-items: center;
@@ -26,7 +26,7 @@ body {
     margin: 0 auto;
     margin-top: 3rem;
     background: white;
-    
+
 }
 
 #final-Score {
@@ -43,7 +43,7 @@ body {
     align-items: center;
 }
 
-.btn{
+.btn {
     font-size: 1.5rem;
     padding: 10px 0;
     width: 10rem;
@@ -55,11 +55,13 @@ body {
     text-decoration: none;
     color: #38003c;
 }
+
 /* button to take you back to the start of the quizz */
 .btn-startover {
     background-color: #e90052;
     color: #38003c
 }
+
 /* save button disabled until user inputs username */
 .btn[disabled]:hover {
     cursor: not-allowed;
@@ -76,8 +78,9 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    
+
 }
+
 /* user input field */
 input {
     margin-bottom: 2rem;
@@ -87,11 +90,13 @@ input {
     border: 2px solid #38003c;
     border-radius: 5px
 }
+
 /* end message after user completes quiz */
 #end-text {
     font-size: 2.5rem;
     text-align: center;
 }
+
 /* Media query for screen of 840px and below */
 @media screen and (max-width: 840px) {
     #end-text {
@@ -102,7 +107,7 @@ input {
 
 @media screen and (max-width: 600px) {
     .container {
-    
+
         display: flex;
         justify-content: center;
         align-items: center;
@@ -113,8 +118,9 @@ input {
         padding: 3rem;
         margin: 25px auto;
         background-color: white;
-        
+
     }
+
     #end-text {
         font-size: 1.5rem;
         text-align: center;
@@ -129,7 +135,7 @@ input {
     }
 
     .container {
-    
+
         display: flex;
         justify-content: center;
         align-items: center;
@@ -140,7 +146,6 @@ input {
         padding: 3rem;
         margin: 25px auto;
         background-color: white;
-        
+
     }
 }
-    

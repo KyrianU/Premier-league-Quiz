@@ -130,4 +130,22 @@ All of my HTML files for my website was tested using the https://validator.w3.or
 
 All of my CSS files was tested using the https://jigsaw.w3.org/css-validator/. No errors reported
 
+Javascript files were teste using the https://jshint.com/ . No errors were reported
+
+# Bugs 
+
+Progress bar's background-color was not incrementing by 10% every time a question was being answered as it supposed to be. The solution for it was to take out the Padding styling within the Progress bar Id. 
+
+
+# Deployment 
+
+ * The website was deployed on Github Pages
+ * On the Project repository, go to settings
+ * Scroll down untill the Page link appears - click it
+ * Under Source, click on the drop down button "None" then click main
+ * Click save, the following message will appear: Your site is ready to be published
+ * After a few minutes, the site will be published with a new message saying - Your site is published.
+
+ * Access to the live link here [PremierLeagueQuiz]
+
 
