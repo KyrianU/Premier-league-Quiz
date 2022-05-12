@@ -66,5 +66,32 @@ Premier League Football quiz is designed to test the knowledge of Premier league
 
 * Similar to to the correct answer, the answer box will only highlight in red once the incorrect answer has been selected 
 
+<img width="909" alt="incorrect answer" src="https://user-images.githubusercontent.com/98747053/167974015-e34c501b-3e12-4659-b9e3-b16ba0c10491.png">
 
+# Features to implement in the future
+
+* I would like to implement a feature where the scores can be saved centrally using an API
+* Implement a series of different difficulty level to give returning and regular users a chance to challenge themselves.
+* to display the correct answer if/when the user selects the incorrect answer.
+
+# Technologies Used 
+
+* HTML5
+* CSS3
+* Google Fonts
+* Local Storage
+* Git, Github, Gitpod
+* Balsamiq Wireframes 
+
+# Testing 
+
+* I tested the site on several web browers, Google Chrome, Mozilla Firefox and Safari. The site loaded consistenly across all the mentioned with no issues detected 
+
+* I have performed a considerable amount of testing to ensure the site is fully responsive on all screen sizes.
+
+## Lighthouse report 
+
+* I conducted the quiz's web performance using Lighthouse in Google chrome, I was very pleased that I scored highly. Results can be seen below.
+
+<img width="609" alt="Lighthouse report" src="https://user-images.githubusercontent.com/98747053/167978155-363cbc63-f465-432f-917b-4e05372e2c95.png">
 
