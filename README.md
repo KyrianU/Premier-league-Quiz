@@ -4,6 +4,8 @@
 
 <img width="912" alt="Landing page responsive" src="https://user-images.githubusercontent.com/98747053/167832607-5245482d-a76f-4c4d-904c-f4db55db11df.png">
 
+<img width="963" alt="Am I Responsive 2" src="https://user-images.githubusercontent.com/98747053/168004439-7d47f639-0f6b-4cf5-b103-b8eb80e4d431.png">
+
 This is website based quiz game built with CSS3, HTML5 and JavaScript. It enables the user to answer a set of 10 questions and obtain their score at the end of the quiz. The user will then have the chance to enter their username and save their score locally. The score will be uploaded to a local leaderboard, where top 3 scores will show.
 
 Premier League Football quiz is designed to test the knowledge of Premier league football fans.
@@ -151,11 +153,14 @@ Progress bar's background-color was not incrementing by 10% every time a questio
 
  # Credit 
 
+ * James Quick and Brian Designs's tutorial really helped a lot in developing this project, the links are below:
  * [James Quick Udemy course](https://www.udemy.com/course/build-a-quiz-app-with-html-css-and-javascript/learn/lecture/13685348#overview)
+
  * [Brian Designs](https://www.youtube.com/results?search_query=brian+design)
  * [Am I responsive](https://ui.dev/amiresponsive)
  * [W3C validator](https://validator.w3.org/)
  * [W3C CSS Validator](https://jigsaw.w3.org/css-validator/)
  * [Readme.so](https://readme.so/editor) Where the Color reference table was creaded from
+ * [stack overflow](https://stackoverflow.com/) & [W3Schools](https://www.w3schools.com/) were constent source of help for whenever I hit a bit of trouble in my project.
 
 
