@@ -10,6 +10,8 @@ This is website based quiz game built with CSS3, HTML5 and JavaScript. It enable
 
 Premier League Football quiz is designed to test the knowledge of Premier league football fans.
 
+link to live website [Premier league Quiz](https://kyrianu.github.io/Premier-league-Quiz/)
+
 # UX (User Experience)
 
 ## Color Reference
@@ -149,7 +151,7 @@ Progress bar's background-color was not incrementing by 10% every time a questio
  * Click save, the following message will appear: Your site is ready to be published
  * After a few minutes, the site will be published with a new message saying - Your site is published.
 
- * Access to the live link here [PremierLeagueQuiz]
+ * Access to the live link here [PremierLeagueQuiz]((https://kyrianu.github.io/Premier-league-Quiz/))
 
  # Credit 
 
