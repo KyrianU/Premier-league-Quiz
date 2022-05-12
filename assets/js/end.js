@@ -1,3 +1,4 @@
+// Credit: The inspiration for this codes comes various video tutorials and content creators: Brian Design and James Quick Udemy course. Links on my Readme file //
 // Basic const function //
 const username = document.querySelector('#username');
 const saveBtn = document.querySelector('#saveBtn');
@@ -18,6 +19,9 @@ username.addEventListener('keyup', () => {
     saveBtn.disabled = !username.value
 });
 
+/**
+ * Function that enables you to save your final score locally
+ */
 saveHighScore = e => {
     e.preventDefault();
 

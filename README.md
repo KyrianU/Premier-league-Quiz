@@ -148,4 +148,13 @@ Progress bar's background-color was not incrementing by 10% every time a questio
 
  * Access to the live link here [PremierLeagueQuiz]
 
+ # Credit 
+
+ * [James Quick Udemy course](https://www.udemy.com/course/build-a-quiz-app-with-html-css-and-javascript/learn/lecture/13685348#overview)
+ * [Brian Designs](https://www.youtube.com/results?search_query=brian+design)
+ * [Am I responsive](https://ui.dev/amiresponsive)
+ * [W3C validator](https://validator.w3.org/)
+ * [W3C CSS Validator](https://jigsaw.w3.org/css-validator/)
+ * [Readme.so](https://readme.so/editor) Where the Color reference table was creaded from
+
 

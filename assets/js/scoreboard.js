@@ -1,3 +1,4 @@
+// Credit: The inspiration for this codes comes various video tutorials and content creators: Brian Design and James Quick Udemy course. Links on my Readme file //
 // Create basic const function //
 const highScoresList = document.querySelector('#highScoresList');
 const highScores = JSON.parse(localStorage.getItem('highScores')) || [];

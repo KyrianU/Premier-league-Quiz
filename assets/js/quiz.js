@@ -1,3 +1,4 @@
+// Credit: The inspiration for this codes comes various video tutorials and content creators: Brian Design and James Quick Udemy course. Links on my Readme file //
 // Basic const functions.// 
 
 const question = document.querySelector('#question');
