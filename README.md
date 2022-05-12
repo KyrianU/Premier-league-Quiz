@@ -25,7 +25,36 @@ Premier League Football quiz is designed to test the knowledge of Premier league
 
 ### Font used 
 
+
 * The font family I used for this project is ["Montserrat", sans-serif;](https://fonts.google.com/specimen/Montserrat?query=Montserrat)
+
+# Wireframes
+
+* Wireframes were with the help of https://balsamiq.com/wireframes/
+
+## Home/Landing Page
+
+* Intended design for the home/landing page 
+
+<img width="457" alt="Landing Page" src="https://user-images.githubusercontent.com/98747053/167989351-fba78137-676b-4a9a-b4fd-df6a16a023f3.png">
+
+## Quiz Page
+
+* Intended design for the layout of the Quiz Page
+
+<img width="549" alt="Quiz Page" src="https://user-images.githubusercontent.com/98747053/167990288-d4ebb960-7a68-4c03-b0a1-83c4fafb257c.png">
+
+## End Of Quiz Page 
+
+* Intended design for the layout of the end of the quiz Page 
+
+<img width="524" alt="End Of Quiz 2" src="https://user-images.githubusercontent.com/98747053/167990966-2967fbc6-acd7-42a5-bd0b-58b6f5bb10d4.png">
+
+## Scoreboard 
+
+* Intended design for the layout of the scoreboard. 
+
+<img width="456" alt="Scoreboard page" src="https://user-images.githubusercontent.com/98747053/167990543-3093078b-ff74-4fa0-bc34-63b345afd5a6.png">
 
 # Features 
 
@@ -97,5 +126,8 @@ Premier League Football quiz is designed to test the knowledge of Premier league
 
 ## Validator testing 
 
-All of my HTML files for my website was tested using the 
+All of my HTML files for my website was tested using the https://validator.w3.org/. All HTML files passed with flying colors 
+
+All of my CSS files was tested using the https://jigsaw.w3.org/css-validator/. No errors reported
+
 
