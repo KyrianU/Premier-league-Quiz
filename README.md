@@ -30,7 +30,7 @@ Premier League Football quiz is designed to test the knowledge of Premier league
 
 # Wireframes
 
-* Wireframes were with the help of https://balsamiq.com/wireframes/
+* Wireframes were created with the help of https://balsamiq.com/wireframes/
 
 ## Home/Landing Page
 
@@ -111,6 +111,7 @@ Premier League Football quiz is designed to test the knowledge of Premier league
 * Local Storage
 * Git, Github, Gitpod
 * Balsamiq Wireframes 
+* Am I Responsive 
 
 # Testing 
 
