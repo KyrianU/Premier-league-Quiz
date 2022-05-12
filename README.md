@@ -49,4 +49,22 @@ Premier League Football quiz is designed to test the knowledge of Premier league
 
 <img width="1231" alt="Final Quiz message" src="https://user-images.githubusercontent.com/98747053/167960761-545d9e21-cb8a-4a43-8a0f-8e5ba873f25b.png">
 
+## Scoreboard Page 
+
+* This page displays the ranking for the 6 best scores. The ranking is stored locally.
+* User then has the option to go back to the home page by pressing the Home button, where the will have the chance to take the quiz again.
+
+<img width="1231" alt="scoreboard screenshot" src="https://user-images.githubusercontent.com/98747053/167969645-b3948dd6-f3c4-48e9-a657-955233979ccc.png">
+
+## Correct Answer 
+
+* The answer box will only highlight in green once the right answer has been chosen
+
+<img width="864" alt="Correct Answer" src="https://user-images.githubusercontent.com/98747053/167972445-024be375-2997-46aa-86d1-ad593969441f.png">
+
+# Incorrect Answer
+
+* Similar to to the correct answer, the answer box will only highlight in red once the incorrect answer has been selected 
+
+
 
