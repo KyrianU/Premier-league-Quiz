@@ -95,3 +95,7 @@ Premier League Football quiz is designed to test the knowledge of Premier league
 
 <img width="609" alt="Lighthouse report" src="https://user-images.githubusercontent.com/98747053/167978155-363cbc63-f465-432f-917b-4e05372e2c95.png">
 
+## Validator testing 
+
+All of my HTML files for my website was tested using the 
+
